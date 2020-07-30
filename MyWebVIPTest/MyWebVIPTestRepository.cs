@@ -87,7 +87,7 @@ namespace MyWebVIPTest
         {
             MyWebVIPTestRepositoryFolders.Category_RootedFolderFolder _category_rootedfolder;
             MyWebVIPTestRepositoryFolders.RadioButtons_RootedFolderFolder _radiobuttons_rootedfolder;
-            MyWebVIPTestRepositoryFolders.InputFields_SimpleFolderFolder _inputfields_simplefolder;
+            MyWebVIPTestRepositoryFolders.InputFieldsFolder _inputfields;
             RepoItemInfo _inputtagaddInfo;
             RepoItemInfo _countInfo;
 
@@ -99,7 +99,7 @@ namespace MyWebVIPTest
             {
                 _category_rootedfolder = new MyWebVIPTestRepositoryFolders.Category_RootedFolderFolder(this);
                 _radiobuttons_rootedfolder = new MyWebVIPTestRepositoryFolders.RadioButtons_RootedFolderFolder(this);
-                _inputfields_simplefolder = new MyWebVIPTestRepositoryFolders.InputFields_SimpleFolderFolder(this);
+                _inputfields = new MyWebVIPTestRepositoryFolders.InputFieldsFolder(this);
                 _inputtagaddInfo = new RepoItemInfo(this, "InputTagAdd", ".//input[#'Add']", 30000, null, "161832a9-d4f0-4a46-b6c2-d4a9275c9054");
                 _countInfo = new RepoItemInfo(this, "Count", ".//td[#'count']", 30000, null, "fdd88167-94cf-4273-9873-0bb034b7af78");
             }
@@ -195,12 +195,12 @@ namespace MyWebVIPTest
             }
 
             /// <summary>
-            /// The InputFields_SimpleFolder folder.
+            /// The InputFields folder.
             /// </summary>
             [RepositoryFolder("732e234d-eb57-4049-84d3-53cd124fb000")]
-            public virtual MyWebVIPTestRepositoryFolders.InputFields_SimpleFolderFolder InputFields_SimpleFolder
+            public virtual MyWebVIPTestRepositoryFolders.InputFieldsFolder InputFields
             {
-                get { return _inputfields_simplefolder; }
+                get { return _inputfields; }
             }
         }
 
@@ -415,19 +415,19 @@ namespace MyWebVIPTest
         }
 
         /// <summary>
-        /// The InputFields_SimpleFolderFolder folder.
+        /// The InputFieldsFolder folder.
         /// </summary>
         [RepositoryFolder("732e234d-eb57-4049-84d3-53cd124fb000")]
-        public partial class InputFields_SimpleFolderFolder : RepoGenBaseFolder
+        public partial class InputFieldsFolder : RepoGenBaseFolder
         {
             RepoItemInfo _firstnameInfo;
             RepoItemInfo _lastnameInfo;
 
             /// <summary>
-            /// Creates a new InputFields_SimpleFolder  folder.
+            /// Creates a new InputFields  folder.
             /// </summary>
-            public InputFields_SimpleFolderFolder(RepoGenBaseFolder parentFolder) :
-                    base("InputFields_SimpleFolder", "", parentFolder, 0, null, false, "732e234d-eb57-4049-84d3-53cd124fb000", "")
+            public InputFieldsFolder(RepoGenBaseFolder parentFolder) :
+                    base("InputFields", "", parentFolder, 0, null, false, "732e234d-eb57-4049-84d3-53cd124fb000", "")
             {
                 _firstnameInfo = new RepoItemInfo(this, "FirstName", ".//input[#'FirstName']", 30000, null, "71d23c1b-8660-4c51-bd37-89bb88c03a58");
                 _lastnameInfo = new RepoItemInfo(this, "LastName", ".//input[#'LastName']", 30000, null, "1cf7a2e1-81ed-4b41-bb67-63a69034a672");

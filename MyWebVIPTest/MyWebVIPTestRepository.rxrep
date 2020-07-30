@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<repository
+﻿<repository
 id="da3b2bc7-526d-47dd-b196-99cdf4d25f37"
 name="MyWebVIPTestRepository"
 rxversion="8.3">
@@ -105,21 +104,11 @@ rxversion="8.3">
 			searchtimeout="30000ms">
 				/dom[@domain='www.ranorex.com']//input[#'Add']
 			</item>
-			<item
-			addcaps="unknown,webelement,tdtag"
-			capname="tdtag"
-			id="fdd88167-94cf-4273-9873-0bb034b7af78"
-			name="Count"
-			refimgid="a1ea94ff-1939-405c-8a67-70df7b0b65f0"
-			refpath="/dom[@domain='www.ranorex.com']//td[#'count']"
-			searchtimeout="30000ms">
-				/dom[@domain='www.ranorex.com']//td[#'count']
-			</item>
 			<folder
 			capname="unknown"
 			id="732e234d-eb57-4049-84d3-53cd124fb000"
 			isrooted="False"
-			name="InputFields_SimpleFolder"
+			name="InputFields"
 			searchtimeout="0ms">
 				<item
 				addcaps="unknown,webelement,inputtag"
@@ -142,6 +131,16 @@ rxversion="8.3">
 					/dom[@domain='www.ranorex.com']//input[#'LastName']
 				</item>
 			</folder>
+			<item
+			addcaps="unknown,webelement,tdtag"
+			capname="tdtag"
+			id="fdd88167-94cf-4273-9873-0bb034b7af78"
+			name="Count"
+			refimgid="a1ea94ff-1939-405c-8a67-70df7b0b65f0"
+			refpath="/dom[@domain='www.ranorex.com']//td[#'count']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.ranorex.com']//td[#'count']
+			</item>
 			<basepath>
 				/dom[@domain='www.ranorex.com']
 			</basepath>

@@ -83,20 +83,20 @@ namespace MyWebVIPTest
             Host.Current.OpenBrowser("http://www.ranorex.com/web-testing-examples/vip/", "IE", "", false, false, false, false, false, true);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RanorexVIPDatabaseTestWebApplicatio.InputFields_SimpleFolder.FirstName' at 22;11.", repo.RanorexVIPDatabaseTestWebApplicatio.InputFields_SimpleFolder.FirstNameInfo, new RecordItemIndex(1));
-            repo.RanorexVIPDatabaseTestWebApplicatio.InputFields_SimpleFolder.FirstName.Click("22;11");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RanorexVIPDatabaseTestWebApplicatio.InputFields.FirstName' at 22;11.", repo.RanorexVIPDatabaseTestWebApplicatio.InputFields.FirstNameInfo, new RecordItemIndex(1));
+            repo.RanorexVIPDatabaseTestWebApplicatio.InputFields.FirstName.Click("22;11");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Jay' with focus on 'RanorexVIPDatabaseTestWebApplicatio.InputFields_SimpleFolder.FirstName'.", repo.RanorexVIPDatabaseTestWebApplicatio.InputFields_SimpleFolder.FirstNameInfo, new RecordItemIndex(2));
-            repo.RanorexVIPDatabaseTestWebApplicatio.InputFields_SimpleFolder.FirstName.PressKeys("Jay");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Jay' with focus on 'RanorexVIPDatabaseTestWebApplicatio.InputFields.FirstName'.", repo.RanorexVIPDatabaseTestWebApplicatio.InputFields.FirstNameInfo, new RecordItemIndex(2));
+            repo.RanorexVIPDatabaseTestWebApplicatio.InputFields.FirstName.PressKeys("Jay");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RanorexVIPDatabaseTestWebApplicatio.InputFields_SimpleFolder.LastName' at 12;11.", repo.RanorexVIPDatabaseTestWebApplicatio.InputFields_SimpleFolder.LastNameInfo, new RecordItemIndex(3));
-            repo.RanorexVIPDatabaseTestWebApplicatio.InputFields_SimpleFolder.LastName.Click("12;11");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RanorexVIPDatabaseTestWebApplicatio.InputFields.LastName' at 12;11.", repo.RanorexVIPDatabaseTestWebApplicatio.InputFields.LastNameInfo, new RecordItemIndex(3));
+            repo.RanorexVIPDatabaseTestWebApplicatio.InputFields.LastName.Click("12;11");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Branham' with focus on 'RanorexVIPDatabaseTestWebApplicatio.InputFields_SimpleFolder.LastName'.", repo.RanorexVIPDatabaseTestWebApplicatio.InputFields_SimpleFolder.LastNameInfo, new RecordItemIndex(4));
-            repo.RanorexVIPDatabaseTestWebApplicatio.InputFields_SimpleFolder.LastName.PressKeys("Branham");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Branham' with focus on 'RanorexVIPDatabaseTestWebApplicatio.InputFields.LastName'.", repo.RanorexVIPDatabaseTestWebApplicatio.InputFields.LastNameInfo, new RecordItemIndex(4));
+            repo.RanorexVIPDatabaseTestWebApplicatio.InputFields.LastName.PressKeys("Branham");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RanorexVIPDatabaseTestWebApplicatio.Category_RootedFolder.Other' at 19;6.", repo.RanorexVIPDatabaseTestWebApplicatio.Category_RootedFolder.OtherInfo, new RecordItemIndex(5));
