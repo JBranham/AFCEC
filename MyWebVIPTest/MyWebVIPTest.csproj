@@ -67,9 +67,6 @@
     <Reference Include="Ranorex.Plugin.Msaa">
       <Private>False</Private>
     </Reference>
-    <Reference Include="Ranorex.Plugin.MyLineageGlueRule">
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Ranorex.Plugin.Office">
       <Private>False</Private>
     </Reference>
